@@ -1,0 +1,264 @@
+***************
+** Arguments **
+***************
+backbone: 
+config_file: configs/trainers/PointCLIP_FS/rn101.yaml
+dataset_config_file: configs/datasets/modelnet40.yaml
+eval_only: False
+head: 
+load_epoch: None
+model_dir: 
+no_train: False
+num_shots: 16
+opts: []
+output_dir: output/PointCLIP_FS/rn101/modelnet40
+post_search: False
+resume: 
+root: data/modelnet40_ply_hdf5_2048
+seed: 2
+source_domains: None
+target_domains: None
+trainer: PointCLIP_FS
+transforms: None
+zero_shot: False
+************
+** Config **
+************
+DATALOADER:
+  K_TRANSFORMS: 1
+  NUM_WORKERS: 8
+  RETURN_IMG0: False
+  TEST:
+    BATCH_SIZE: 100
+    SAMPLER: SequentialSampler
+  TRAIN_U:
+    BATCH_SIZE: 32
+    N_DOMAIN: 0
+    N_INS: 16
+    SAME_AS_X: True
+    SAMPLER: RandomSampler
+  TRAIN_X:
+    BATCH_SIZE: 32
+    N_DOMAIN: 0
+    N_INS: 16
+    SAMPLER: RandomSampler
+DATASET:
+  ALL_AS_UNLABELED: False
+  CIFAR_C_LEVEL: 1
+  CIFAR_C_TYPE: 
+  NAME: ModelNet40
+  NUM_LABELED: -1
+  NUM_SHOTS: 16
+  ROOT: data/modelnet40_ply_hdf5_2048
+  SOURCE_DOMAINS: ()
+  STL10_FOLD: -1
+  TARGET_DOMAINS: ()
+  VAL_PERCENT: 0.1
+INPUT:
+  COLORJITTER_B: 0.4
+  COLORJITTER_C: 0.4
+  COLORJITTER_H: 0.1
+  COLORJITTER_S: 0.4
+  CROP_PADDING: 4
+  CUTOUT_LEN: 16
+  CUTOUT_N: 1
+  GB_K: 21
+  GB_P: 0.5
+  GN_MEAN: 0.0
+  GN_STD: 0.15
+  INTERPOLATION: bilinear
+  NO_TRANSFORM: False
+  PIXEL_MEAN: [0.485, 0.456, 0.406]
+  PIXEL_STD: [0.229, 0.224, 0.225]
+  RANDAUGMENT_M: 10
+  RANDAUGMENT_N: 2
+  RGS_P: 0.2
+  SIZE: (224, 224)
+  TRANSFORMS: ()
+MODEL:
+  ADAPTER:
+    DROPOUT: 0.075
+    INIT: 0.5
+    RATIO: 0.6
+  BACKBONE:
+    CHANNEL: 512
+    NAME: RN101
+    PRETRAINED: True
+  HEAD:
+    ACTIVATION: relu
+    BN: True
+    DROPOUT: 0.0
+    HIDDEN_LAYERS: ()
+    NAME: 
+  INIT_WEIGHTS: 
+  PROJECT:
+    NUM_VIEWS: 10
+OPTIM:
+  ADAM_BETA1: 0.9
+  ADAM_BETA2: 0.999
+  BASE_LR_MULT: 0.1
+  GAMMA: 0.1
+  LR: 0.01
+  LR_SCHEDULER: cosine
+  MAX_EPOCH: 250
+  MOMENTUM: 0.9
+  NAME: sgd
+  NEW_LAYERS: ()
+  RMSPROP_ALPHA: 0.99
+  SGD_DAMPNING: 0
+  SGD_NESTEROV: False
+  STAGED_LR: False
+  STEPSIZE: (-1,)
+  WARMUP_CONS_LR: 1e-05
+  WARMUP_EPOCH: 1
+  WARMUP_MIN_LR: 1e-05
+  WARMUP_RECOUNT: True
+  WARMUP_TYPE: constant
+  WEIGHT_DECAY: 0.0005
+OUTPUT_DIR: output/PointCLIP_FS/rn101/modelnet40
+RESUME: 
+SEARCH:
+  RANGE: 1
+  TIME: 4
+SEED: 2
+TEST:
+  COMPUTE_CMAT: False
+  EVALUATOR: Classification
+  FINAL_MODEL: best_val
+  NO_TEST: False
+  PER_CLASS_RESULT: False
+  SPLIT: test
+TRAIN:
+  CHECKPOINT_FREQ: 0
+  COUNT_ITER: train_x
+  PRINT_FREQ: 5
+TRAINER:
+  CG:
+    ALPHA_D: 0.5
+    ALPHA_F: 0.5
+    EPS_D: 1.0
+    EPS_F: 1.0
+  DAEL:
+    CONF_THRE: 0.95
+    STRONG_TRANSFORMS: ()
+    WEIGHT_U: 0.5
+  DDAIG:
+    ALPHA: 0.5
+    CLAMP: False
+    CLAMP_MAX: 1.0
+    CLAMP_MIN: -1.0
+    G_ARCH: 
+    LMDA: 0.3
+    WARMUP: 0
+  ENTMIN:
+    LMDA: 0.001
+  EXTRA:
+    
+  FIXMATCH:
+    CONF_THRE: 0.95
+    STRONG_TRANSFORMS: ()
+    WEIGHT_U: 1.0
+  M3SDA:
+    LMDA: 0.5
+    N_STEP_F: 4
+  MCD:
+    N_STEP_F: 4
+  MEANTEA:
+    EMA_ALPHA: 0.999
+    RAMPUP: 5
+    WEIGHT_U: 1.0
+  MIXMATCH:
+    MIXUP_BETA: 0.75
+    RAMPUP: 20000
+    TEMP: 2.0
+    WEIGHT_U: 100.0
+  MME:
+    LMDA: 0.1
+  NAME: PointCLIP_FS
+  SE:
+    CONF_THRE: 0.95
+    EMA_ALPHA: 0.999
+    RAMPUP: 300
+USE_CUDA: True
+VERBOSE: True
+VERSION: 1
+Collecting env info ...
+** System info **
+PyTorch version: 1.9.0+cu111
+Is debug build: False
+CUDA used to build PyTorch: 11.1
+ROCM used to build PyTorch: N/A
+
+OS: Ubuntu 18.04.5 LTS (x86_64)
+GCC version: (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0
+Clang version: Could not collect
+CMake version: version 3.10.2
+Libc version: glibc-2.27
+
+Python version: 3.8 (64-bit runtime)
+Python platform: Linux-5.4.0-139-generic-x86_64-with-glibc2.17
+Is CUDA available: True
+CUDA runtime version: 11.1.105
+GPU models and configuration: GPU 0: NVIDIA GeForce RTX 2080 Ti
+Nvidia driver version: 525.105.17
+cuDNN version: Probably one of the following:
+/usr/lib/x86_64-linux-gnu/libcudnn.so.8.0.5
+/usr/lib/x86_64-linux-gnu/libcudnn_adv_infer.so.8.0.5
+/usr/lib/x86_64-linux-gnu/libcudnn_adv_train.so.8.0.5
+/usr/lib/x86_64-linux-gnu/libcudnn_cnn_infer.so.8.0.5
+/usr/lib/x86_64-linux-gnu/libcudnn_cnn_train.so.8.0.5
+/usr/lib/x86_64-linux-gnu/libcudnn_ops_infer.so.8.0.5
+/usr/lib/x86_64-linux-gnu/libcudnn_ops_train.so.8.0.5
+HIP runtime version: N/A
+MIOpen runtime version: N/A
+
+Versions of relevant libraries:
+[pip3] numpy==1.21.2
+[pip3] torch==1.9.0+cu111
+[pip3] torchvision==0.10.0+cu111
+[conda] numpy                     1.21.2                   pypi_0    pypi
+[conda] torch                     1.9.0+cu111              pypi_0    pypi
+[conda] torchvision               0.10.0+cu111             pypi_0    pypi
+        Pillow (10.2.0)
+
+Loading trainer: PointCLIP_FS
+Loading dataset: ModelNet40
+Creating a 16-shot dataset
+***** Dataset statistics *****
+  Dataset: ModelNet40
+  # classes: 40
+  # train_x: 640
+  # val: 2,468
+  # test: 2,468
+Loading CLIP (backbone: RN101)
+Building PointCLIP
+Turning off gradients in both visual and textual encoders
+Loading evaluator: Classification
+Initializing summary writer for tensorboard with log_dir=output/PointCLIP_FS/rn101/modelnet40/tensorboard
+epoch [1/250][5/20]	time 0.354 (1.085)	data 0.000 (0.256)	eta 1:30:19	loss 4.0352 (4.0199)	acc 6.2500 (6.8750)	lr 1.000000e-05
+epoch [1/250][10/20]	time 0.354 (0.719)	data 0.000 (0.128)	eta 0:59:48	loss 4.1133 (4.0193)	acc 0.0000 (6.2500)	lr 1.000000e-05
+epoch [1/250][15/20]	time 0.354 (0.598)	data 0.000 (0.085)	eta 0:49:38	loss 3.8496 (3.9940)	acc 9.3750 (6.8750)	lr 1.000000e-05
+epoch [1/250][20/20]	time 0.354 (0.537)	data 0.000 (0.064)	eta 0:44:32	loss 4.1875 (4.0062)	acc 0.0000 (6.0938)	lr 1.000000e-02
+Do evaluation on val set
+=> result
+* total: 2,468
+* correct: 373
+* accuracy: 15.11%
+* error: 84.89%
+Checkpoint saved to "output/PointCLIP_FS/rn101/modelnet40/adapter/model-best.pth.tar"
+epoch [2/250][5/20]	time 0.356 (0.545)	data 0.000 (0.189)	eta 0:45:12	loss 3.5293 (3.4711)	acc 18.7500 (19.3750)	lr 1.000000e-02
+epoch [2/250][10/20]	time 0.360 (0.451)	data 0.000 (0.095)	eta 0:37:20	loss 2.7148 (3.2771)	acc 46.8750 (25.6250)	lr 1.000000e-02
+epoch [2/250][15/20]	time 0.355 (0.419)	data 0.000 (0.063)	eta 0:34:41	loss 2.5605 (3.0659)	acc 40.6250 (32.5000)	lr 1.000000e-02
+epoch [2/250][20/20]	time 0.357 (0.403)	data 0.000 (0.047)	eta 0:33:20	loss 2.4395 (2.9450)	acc 53.1250 (35.3125)	lr 9.999605e-03
+Do evaluation on val set
+=> result
+* total: 2,468
+* correct: 498
+* accuracy: 20.18%
+* error: 79.82%
+Checkpoint saved to "output/PointCLIP_FS/rn101/modelnet40/adapter/model-best.pth.tar"
+epoch [3/250][5/20]	time 0.355 (0.540)	data 0.000 (0.185)	eta 0:44:37	loss 2.4414 (2.2699)	acc 40.6250 (56.8750)	lr 9.999605e-03
+epoch [3/250][10/20]	time 0.356 (0.448)	data 0.000 (0.092)	eta 0:36:57	loss 2.3301 (2.2527)	acc 50.0000 (56.5625)	lr 9.999605e-03
+epoch [3/250][15/20]	time 0.356 (0.417)	data 0.000 (0.062)	eta 0:34:23	loss 2.4395 (2.2451)	acc 46.8750 (57.9167)	lr 9.999605e-03
+epoch [3/250][20/20]	time 0.356 (0.402)	data 0.000 (0.046)	eta 0:33:04	loss 2.4570 (2.2431)	acc 43.7500 (57.9688)	lr 9.998421e-03
+Do evaluation on val set
