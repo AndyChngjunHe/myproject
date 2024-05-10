@@ -1,12 +1,8 @@
 # Hechengjun's graduation poject
 
 
-
-
-[PointCLIP V2](https://arxiv.org/pdf/2211.11682.pdf) with much stronger zero-shot performance will be released at [repo](https://github.com/yangyangyang127/PointCLIP_V2).
-
 ## Introduction
-PointCLIP is the first to apply CLIP for point cloud recognition, which transfers 2D pre-trained knowledge into 3D domains. To achieve zero-shot classification, we encode a point cloud by projecting it onto multi-view depth maps and aggregate the view-wise prediction in an end-to-end manner. On top of that, we design an inter-view adapter to further enhance the few-shot performance, and explore the complementary property of PointCLIP for muti-knowledge ensemble.
+本项目包含本科项目涉及到的所有代码和数据集，主要内容有：PointNet、PointNet++、PointCLIP模型的分类算法复现以及PointCLIP模型zeroshot模块与PointNet模型结合在ScanObjectNN数据集上的分类表现上的优化。
 
 <div align="center">
   <img src="./figs/pipeline.png"/>
