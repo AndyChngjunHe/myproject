@@ -54,7 +54,7 @@ Training
 cd utils
 python train_classification.py --dataset <dataset path> --nepoch=<number epochs> --dataset_type <modelnet40 | scanobjectnn>
 
-```bash
+```
 Use --feature_transform to use feature transform.
 
 ### Zero-shot PointCLIP
