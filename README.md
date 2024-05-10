@@ -48,7 +48,7 @@ The directory structure should be:
 ### 
 
 ## Get Started
-###PointNet Classification
+### PointNet Classification
 Training
 ```bash
 cd utils
