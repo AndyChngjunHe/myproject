@@ -12,13 +12,13 @@
 ### Installation
 PointNet和PointNet++所需环境安装：
 PyTorch 1.6.0、Python 3.8、CUDA 10.1  requirements去系统里看一下
+```bash
 conda create -n pointnet python=3.8
 conda activate pointnet
-
 pip install -r requirements.txt
+```
 
 
-PyTorch 1.9.0 和 CUDA 11.1
 Create a conda environment and install dependencies:
 cd PointCLIP
 conda create -n pointclip python=3.8
@@ -28,6 +28,7 @@ pip install -r requirements.txt
 
 # Install the according versions of torch and torchvision
 conda install pytorch torchvision cudatoolkit
+PyTorch 1.9.0 和 CUDA 11.1
 
 # Install the modified dassl library (no need to re-build if the source code is changed)
 cd Dassl3D/
