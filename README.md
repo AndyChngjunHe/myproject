@@ -48,6 +48,14 @@ The directory structure should be:
 ### 
 
 ## Get Started
+###PointNet Classification
+Training
+```bash
+cd utils
+python train_classification.py --dataset <dataset path> --nepoch=<number epochs> --dataset_type <modelnet40 | scanobjectnn>
+
+```bash
+Use --feature_transform to use feature transform.
 
 ### Zero-shot PointCLIP
 Edit the running settings in `scripts/zeroshot.sh`, e.g. config file and output directory. Then run Zero-shot PointCLIP:
@@ -55,7 +63,7 @@ Edit the running settings in `scripts/zeroshot.sh`, e.g. config file and output 
 cd scripts
 bash zeroshot.sh
 ```
-If you need the post-search for the best view weights, add `--post-search` and modulate the search parameters in the config file. More search time leads to higher search results but longer time.
+
 
 ### Few-shot PointCLIP
 Set the shot number and other settings in `scripts/fewshot.sh`. Then run PointCLIP with the inter-view adapter:
@@ -63,7 +71,6 @@ Set the shot number and other settings in `scripts/fewshot.sh`. Then run PointCL
 cd scripts
 bash fewshot.sh
 ```
-`--post-search` is also optional.
 
 
 ## Acknowlegment
