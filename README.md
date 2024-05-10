@@ -11,23 +11,17 @@
 
 ### Installation
 PointNet和PointNet++所需环境安装：
-PyTorch 1.6.0、Python 3.8、CUDA 10.1，并运
-行在 Ubuntu 18.04 系统上。此配置使用 NVIDIA RTX 2080 Ti GPU，拥有 11GB 的显存。
+PyTorch 1.6.0、Python 3.8、CUDA 10.1  requirements去系统里看一下
 conda create -n pointnet python=3.8
 conda activate pointnet
 
 pip install -r requirements.txt
 
 
-PyTorch 1.9.0 和 CUDA 11.1。此配置使用了性能更强大的
-NVIDIA RTX 3090 GPU
-
+PyTorch 1.9.0 和 CUDA 11.1
 Create a conda environment and install dependencies:
-```bash
-git clone https://github.com/ZrrSkywalker/PointCLIP.git
 cd PointCLIP
-
-conda create -n pointclip python=3.7
+conda create -n pointclip python=3.8
 conda activate pointclip
 
 pip install -r requirements.txt
