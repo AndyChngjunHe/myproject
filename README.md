@@ -20,12 +20,12 @@ pip install -r requirements.txt
 
 
 Create a conda environment and install dependencies:
+```bash
 cd PointCLIP
 conda create -n pointclip python=3.8
 conda activate pointclip
-
 pip install -r requirements.txt
-
+```
 # Install the according versions of torch and torchvision
 conda install pytorch torchvision cudatoolkit
 PyTorch 1.9.0 和 CUDA 11.1
