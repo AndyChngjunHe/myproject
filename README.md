@@ -19,14 +19,13 @@ pip install -r requirements.txt
 ```
 
 
-创建conda环境并安装依赖:
+PointCLIP所需环境安装:
 ```bash
 cd PointCLIP
 conda create -n pointclip python=3.8
 conda activate pointclip
 pip install -r requirements.txt
-```
-# Install the according versions of torch and torchvision
+
 conda install pytorch torchvision cudatoolkit
 PyTorch 1.9.0 和 CUDA 11.1
 
@@ -34,7 +33,6 @@ PyTorch 1.9.0 和 CUDA 11.1
 cd Dassl3D/
 python setup.py develop
 
-cd ..
 ```
 
 ### Dataset
@@ -71,15 +69,4 @@ bash fewshot.sh
 ## Acknowlegment
 This repo benefits from [CLIP](https://github.com/openai/CLIP), [SimpleView](https://github.com/princeton-vl/SimpleView) and the excellent codebase [Dassl](https://github.com/KaiyangZhou/Dassl.pytorch). Thanks for their wonderful works.
 
-## Citation
-```bash
-@article{zhang2021pointclip,
-  title={PointCLIP: Point Cloud Understanding by CLIP},
-  author={Zhang, Renrui and Guo, Ziyu and Zhang, Wei and Li, Kunchang and Miao, Xupeng and Cui, Bin and Qiao, Yu and Gao, Peng and Li, Hongsheng},
-  journal={arXiv preprint arXiv:2112.02413},
-  year={2021}
-}
-```
 
-## Contact
-If you have any question about this project, please feel free to contact zhangrenrui@pjlab.org.cn.
