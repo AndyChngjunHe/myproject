@@ -4,9 +4,7 @@
 ## Introduction
 本项目包含本科项目涉及到的所有代码和数据集，主要内容有：PointNet、PointNet++、PointCLIP模型的分类算法复现以及PointCLIP模型zeroshot模块与PointNet模型结合在ScanObjectNN数据集上的分类表现上的优化。
 
-<div align="center">
-  <img src="./figs/pipeline.png"/>
-</div>
+
 
 
 ## Requirements
