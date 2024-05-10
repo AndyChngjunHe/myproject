@@ -19,7 +19,7 @@ pip install -r requirements.txt
 ```
 
 
-Create a conda environment and install dependencies:
+创建conda环境并安装依赖:
 ```bash
 cd PointCLIP
 conda create -n pointclip python=3.8
@@ -67,13 +67,6 @@ bash fewshot.sh
 ```
 `--post-search` is also optional.
 
-### Evaluation
-Download the pre-pretrained [checkpoint](https://drive.google.com/file/d/1hFswVidomLdYaWZZga6RpWRJW9-JJbHZ/view?usp=sharing) by 16-shot fine-tuning and put it under `ckpt/adapter/`. It will produce 86.71% on ModelNet40 test set and 87%+ by post-search:
-```bash
-cd scripts
-bash eval.sh
-```
-You can edit the `--model-dir` and `--output-dir` to evaluate checkpoints trained by your own.
 
 ## Acknowlegment
 This repo benefits from [CLIP](https://github.com/openai/CLIP), [SimpleView](https://github.com/princeton-vl/SimpleView) and the excellent codebase [Dassl](https://github.com/KaiyangZhou/Dassl.pytorch). Thanks for their wonderful works.
