@@ -1,5 +1,5 @@
-# PointCLIP: Point Cloud Understanding by CLIP
-Official implementation of ['PointCLIP: Point Cloud Understanding by CLIP'](https://openaccess.thecvf.com/content/CVPR2022/papers/Zhang_PointCLIP_Point_Cloud_Understanding_by_CLIP_CVPR_2022_paper.pdf).
+# Hechengjun's graduation poject
+
 
 
 
