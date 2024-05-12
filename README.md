@@ -3,7 +3,7 @@
 
 ## Introduction
 本项目包含本科毕业项目涉及到的所有代码和数据集，主要内容有：PointNet、PointNet++、PointCLIP模型的分类算法复现以及PointCLIP模型zeroshot模块与PointNet模型结合在ScanObjectNN数据集上的分类表现上的优化。
-
+项目中log文件夹中有论文中涉及到的运行记录以及pth模型文件
 
 
 
@@ -69,7 +69,7 @@ python train_classification.py --dataset <dataset path> --nepoch=<number epochs>
 ```
 Use --feature_transform to use feature transform.
 
-### PointNet++
+### PointNet++ Classification
 If you want to train on ModelNet40, you can use --num_category 40.
 If you want to train on ScanObjectNN, you can use --num_category 15.
 ```bash
@@ -90,7 +90,7 @@ python test_classification.py --log_dir pointnet2_cls_msg --num_category 15
 
 ```
 
-### Zero-shot PointCLIP
+### Zero-shot PointCLIP  Classification
 #### 需要修改数据集或者使用的模型，可以在zeroshot.sh和fewshot.sh中修改参数
 Edit the running settings in `scripts/zeroshot.sh`, e.g. config file and output directory. Then run Zero-shot PointCLIP:
 ```bash
@@ -99,7 +99,7 @@ bash zeroshot.sh
 ```
 
 
-### Few-shot PointCLIP
+### Few-shot PointCLIP  Classification
 Set the shot number and other settings in `scripts/fewshot.sh`. Then run PointCLIP with the inter-view adapter:
 ```bash
 cd scripts
@@ -108,6 +108,6 @@ bash fewshot.sh
 
 
 ## Acknowlegment
-This repo benefits from [CLIP](https://github.com/openai/CLIP), [SimpleView](https://github.com/princeton-vl/SimpleView) and the excellent codebase [Dassl](https://github.com/KaiyangZhou/Dassl.pytorch). Thanks for their wonderful works.
+This repo benefits from [Pointnet_Pointnet2_pytorch](https://github.com/yanx27/Pointnet_Pointnet2_pytorch), [pointnet.pytorch](https://github.com/fxia22/pointnet.pytorch) and [PointCLIP](https://github.com/zrrskywalker/pointclip) Thanks for their wonderful works.
 
 
