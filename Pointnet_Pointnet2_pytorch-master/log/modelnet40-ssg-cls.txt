@@ -1,0 +1,1226 @@
+/root/miniconda3/bin/python /root/autodl-tmp/pointnet2/train_classification.py
+PARAMETER ...
+Namespace(batch_size=64, decay_rate=0.0001, epoch=200, gpu='0', learning_rate=0.001, log_dir=None, model='pointnet2_cls_ssg', num_category=40, num_point=1024, optimizer='Adam', process_data=False, use_cpu=False, use_normals=False, use_uniform_sample=False)
+Load dataset ...
+No existing model, starting training from scratch...
+Epoch 1 (1/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.510417
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.93it/s]
+Test Instance Accuracy: 0.632301, Class Accuracy: 0.512840
+Best Instance Accuracy: 0.632301, Class Accuracy: 0.512840
+Saving at log/classification/2024-03-31_15-29/checkpoints/best_model.pth
+Epoch 2 (2/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.06it/s]
+Train Instance Accuracy: 0.693730
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.99it/s]
+Test Instance Accuracy: 0.783565, Class Accuracy: 0.698735
+Best Instance Accuracy: 0.783565, Class Accuracy: 0.698735
+Saving at log/classification/2024-03-31_15-29/checkpoints/best_model.pth
+Epoch 3 (3/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.06it/s]
+Train Instance Accuracy: 0.744996
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.95it/s]
+Test Instance Accuracy: 0.783342, Class Accuracy: 0.709339
+Best Instance Accuracy: 0.783565, Class Accuracy: 0.709339
+Epoch 4 (4/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.772263
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.97it/s]
+Test Instance Accuracy: 0.785702, Class Accuracy: 0.732273
+Best Instance Accuracy: 0.785702, Class Accuracy: 0.732273
+Saving at log/classification/2024-03-31_15-29/checkpoints/best_model.pth
+Epoch 5 (5/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.06it/s]
+Train Instance Accuracy: 0.804841
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.97it/s]
+Test Instance Accuracy: 0.803552, Class Accuracy: 0.727496
+Best Instance Accuracy: 0.803552, Class Accuracy: 0.732273
+Saving at log/classification/2024-03-31_15-29/checkpoints/best_model.pth
+Epoch 6 (6/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.07it/s]
+Train Instance Accuracy: 0.809641
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.99it/s]
+Test Instance Accuracy: 0.800614, Class Accuracy: 0.728979
+Best Instance Accuracy: 0.803552, Class Accuracy: 0.732273
+Epoch 7 (7/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.818525
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.93it/s]
+Test Instance Accuracy: 0.766426, Class Accuracy: 0.742742
+Best Instance Accuracy: 0.803552, Class Accuracy: 0.742742
+Epoch 8 (8/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.06it/s]
+Train Instance Accuracy: 0.829963
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.97it/s]
+Test Instance Accuracy: 0.831775, Class Accuracy: 0.784836
+Best Instance Accuracy: 0.831775, Class Accuracy: 0.784836
+Saving at log/classification/2024-03-31_15-29/checkpoints/best_model.pth
+Epoch 9 (9/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.07it/s]
+Train Instance Accuracy: 0.842831
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  4.02it/s]
+Test Instance Accuracy: 0.864939, Class Accuracy: 0.811962
+Best Instance Accuracy: 0.864939, Class Accuracy: 0.811962
+Saving at log/classification/2024-03-31_15-29/checkpoints/best_model.pth
+Epoch 10 (10/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.04it/s]
+Train Instance Accuracy: 0.849265
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.96it/s]
+Test Instance Accuracy: 0.806891, Class Accuracy: 0.738455
+Best Instance Accuracy: 0.864939, Class Accuracy: 0.811962
+Epoch 11 (11/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.857026
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.98it/s]
+Test Instance Accuracy: 0.872374, Class Accuracy: 0.828914
+Best Instance Accuracy: 0.872374, Class Accuracy: 0.828914
+Saving at log/classification/2024-03-31_15-29/checkpoints/best_model.pth
+Epoch 12 (12/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.860396
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.97it/s]
+Test Instance Accuracy: 0.805021, Class Accuracy: 0.750533
+Best Instance Accuracy: 0.872374, Class Accuracy: 0.828914
+Epoch 13 (13/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.858762
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.98it/s]
+Test Instance Accuracy: 0.841791, Class Accuracy: 0.812454
+Best Instance Accuracy: 0.872374, Class Accuracy: 0.828914
+Epoch 14 (14/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.867136
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.98it/s]
+Test Instance Accuracy: 0.838497, Class Accuracy: 0.788756
+Best Instance Accuracy: 0.872374, Class Accuracy: 0.828914
+Epoch 15 (15/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.872958
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.95it/s]
+Test Instance Accuracy: 0.894409, Class Accuracy: 0.848563
+Best Instance Accuracy: 0.894409, Class Accuracy: 0.848563
+Saving at log/classification/2024-03-31_15-29/checkpoints/best_model.pth
+Epoch 16 (16/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.06it/s]
+Train Instance Accuracy: 0.877451
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.94it/s]
+Test Instance Accuracy: 0.880743, Class Accuracy: 0.847608
+Best Instance Accuracy: 0.894409, Class Accuracy: 0.848563
+Epoch 17 (17/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.04it/s]
+Train Instance Accuracy: 0.873162
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.92it/s]
+Test Instance Accuracy: 0.891604, Class Accuracy: 0.847550
+Best Instance Accuracy: 0.894409, Class Accuracy: 0.848563
+Epoch 18 (18/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.872243
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.97it/s]
+Test Instance Accuracy: 0.853989, Class Accuracy: 0.824357
+Best Instance Accuracy: 0.894409, Class Accuracy: 0.848563
+Epoch 19 (19/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.07it/s]
+Train Instance Accuracy: 0.880515
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.95it/s]
+Test Instance Accuracy: 0.876157, Class Accuracy: 0.831562
+Best Instance Accuracy: 0.894409, Class Accuracy: 0.848563
+Epoch 20 (20/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.890217
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.95it/s]
+Test Instance Accuracy: 0.899306, Class Accuracy: 0.855887
+Best Instance Accuracy: 0.899306, Class Accuracy: 0.855887
+Saving at log/classification/2024-03-31_15-29/checkpoints/best_model.pth
+Epoch 21 (21/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.06it/s]
+Train Instance Accuracy: 0.895425
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.96it/s]
+Test Instance Accuracy: 0.896501, Class Accuracy: 0.849840
+Best Instance Accuracy: 0.899306, Class Accuracy: 0.855887
+Epoch 22 (22/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.06it/s]
+Train Instance Accuracy: 0.896855
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.98it/s]
+Test Instance Accuracy: 0.899795, Class Accuracy: 0.857899
+Best Instance Accuracy: 0.899795, Class Accuracy: 0.857899
+Saving at log/classification/2024-03-31_15-29/checkpoints/best_model.pth
+Epoch 23 (23/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.905331
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.97it/s]
+Test Instance Accuracy: 0.896501, Class Accuracy: 0.851838
+Best Instance Accuracy: 0.899795, Class Accuracy: 0.857899
+Epoch 24 (24/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.902778
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.97it/s]
+Test Instance Accuracy: 0.888088, Class Accuracy: 0.842481
+Best Instance Accuracy: 0.899795, Class Accuracy: 0.857899
+Epoch 25 (25/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.901348
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.95it/s]
+Test Instance Accuracy: 0.882167, Class Accuracy: 0.835337
+Best Instance Accuracy: 0.899795, Class Accuracy: 0.857899
+Epoch 26 (26/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.904820
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.99it/s]
+Test Instance Accuracy: 0.896501, Class Accuracy: 0.854307
+Best Instance Accuracy: 0.899795, Class Accuracy: 0.857899
+Epoch 27 (27/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.06it/s]
+Train Instance Accuracy: 0.910743
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.99it/s]
+Test Instance Accuracy: 0.893385, Class Accuracy: 0.847448
+Best Instance Accuracy: 0.899795, Class Accuracy: 0.857899
+Epoch 28 (28/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.06it/s]
+Train Instance Accuracy: 0.905025
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.94it/s]
+Test Instance Accuracy: 0.883992, Class Accuracy: 0.837578
+Best Instance Accuracy: 0.899795, Class Accuracy: 0.857899
+Epoch 29 (29/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.06it/s]
+Train Instance Accuracy: 0.907884
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.98it/s]
+Test Instance Accuracy: 0.900507, Class Accuracy: 0.851841
+Best Instance Accuracy: 0.900507, Class Accuracy: 0.857899
+Saving at log/classification/2024-03-31_15-29/checkpoints/best_model.pth
+Epoch 30 (30/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.907169
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.95it/s]
+Test Instance Accuracy: 0.895299, Class Accuracy: 0.855442
+Best Instance Accuracy: 0.900507, Class Accuracy: 0.857899
+Epoch 31 (31/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.03it/s]
+Train Instance Accuracy: 0.910948
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.96it/s]
+Test Instance Accuracy: 0.900107, Class Accuracy: 0.848068
+Best Instance Accuracy: 0.900507, Class Accuracy: 0.857899
+Epoch 32 (32/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.06it/s]
+Train Instance Accuracy: 0.911560
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.95it/s]
+Test Instance Accuracy: 0.895388, Class Accuracy: 0.860056
+Best Instance Accuracy: 0.900507, Class Accuracy: 0.860056
+Epoch 33 (33/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.07it/s]
+Train Instance Accuracy: 0.911867
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.96it/s]
+Test Instance Accuracy: 0.894899, Class Accuracy: 0.845492
+Best Instance Accuracy: 0.900507, Class Accuracy: 0.860056
+Epoch 34 (34/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.06it/s]
+Train Instance Accuracy: 0.910641
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.98it/s]
+Test Instance Accuracy: 0.895388, Class Accuracy: 0.857886
+Best Instance Accuracy: 0.900507, Class Accuracy: 0.860056
+Epoch 35 (35/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.07it/s]
+Train Instance Accuracy: 0.914828
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.95it/s]
+Test Instance Accuracy: 0.896590, Class Accuracy: 0.863586
+Best Instance Accuracy: 0.900507, Class Accuracy: 0.863586
+Epoch 36 (36/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.07it/s]
+Train Instance Accuracy: 0.914931
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.97it/s]
+Test Instance Accuracy: 0.909633, Class Accuracy: 0.867904
+Best Instance Accuracy: 0.909633, Class Accuracy: 0.867904
+Saving at log/classification/2024-03-31_15-29/checkpoints/best_model.pth
+Epoch 37 (37/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.07it/s]
+Train Instance Accuracy: 0.918403
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.97it/s]
+Test Instance Accuracy: 0.902911, Class Accuracy: 0.853736
+Best Instance Accuracy: 0.909633, Class Accuracy: 0.867904
+Epoch 38 (38/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.07it/s]
+Train Instance Accuracy: 0.913297
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.96it/s]
+Test Instance Accuracy: 0.891471, Class Accuracy: 0.856377
+Best Instance Accuracy: 0.909633, Class Accuracy: 0.867904
+Epoch 39 (39/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.06it/s]
+Train Instance Accuracy: 0.917994
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.96it/s]
+Test Instance Accuracy: 0.897703, Class Accuracy: 0.853334
+Best Instance Accuracy: 0.909633, Class Accuracy: 0.867904
+Epoch 40 (40/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.04it/s]
+Train Instance Accuracy: 0.928207
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.91it/s]
+Test Instance Accuracy: 0.907630, Class Accuracy: 0.872078
+Best Instance Accuracy: 0.909633, Class Accuracy: 0.872078
+Epoch 41 (41/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.927798
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.92it/s]
+Test Instance Accuracy: 0.904915, Class Accuracy: 0.863762
+Best Instance Accuracy: 0.909633, Class Accuracy: 0.872078
+Epoch 42 (42/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.07it/s]
+Train Instance Accuracy: 0.934743
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.97it/s]
+Test Instance Accuracy: 0.914352, Class Accuracy: 0.870100
+Best Instance Accuracy: 0.914352, Class Accuracy: 0.872078
+Saving at log/classification/2024-03-31_15-29/checkpoints/best_model.pth
+Epoch 43 (43/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.926573
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.97it/s]
+Test Instance Accuracy: 0.898994, Class Accuracy: 0.862271
+Best Instance Accuracy: 0.914352, Class Accuracy: 0.872078
+Epoch 44 (44/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.06it/s]
+Train Instance Accuracy: 0.930964
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.96it/s]
+Test Instance Accuracy: 0.908832, Class Accuracy: 0.868414
+Best Instance Accuracy: 0.914352, Class Accuracy: 0.872078
+Epoch 45 (45/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.06it/s]
+Train Instance Accuracy: 0.930760
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.99it/s]
+Test Instance Accuracy: 0.908921, Class Accuracy: 0.873786
+Best Instance Accuracy: 0.914352, Class Accuracy: 0.873786
+Epoch 46 (46/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.934538
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.98it/s]
+Test Instance Accuracy: 0.905226, Class Accuracy: 0.867002
+Best Instance Accuracy: 0.914352, Class Accuracy: 0.873786
+Epoch 47 (47/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.06it/s]
+Train Instance Accuracy: 0.935049
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.97it/s]
+Test Instance Accuracy: 0.898905, Class Accuracy: 0.866627
+Best Instance Accuracy: 0.914352, Class Accuracy: 0.873786
+Epoch 48 (48/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.932802
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.92it/s]
+Test Instance Accuracy: 0.896011, Class Accuracy: 0.858068
+Best Instance Accuracy: 0.914352, Class Accuracy: 0.873786
+Epoch 49 (49/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.935866
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.95it/s]
+Test Instance Accuracy: 0.899617, Class Accuracy: 0.873179
+Best Instance Accuracy: 0.914352, Class Accuracy: 0.873786
+Epoch 50 (50/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.933415
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.95it/s]
+Test Instance Accuracy: 0.894409, Class Accuracy: 0.857804
+Best Instance Accuracy: 0.914352, Class Accuracy: 0.873786
+Epoch 51 (51/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.06it/s]
+Train Instance Accuracy: 0.934641
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.98it/s]
+Test Instance Accuracy: 0.897926, Class Accuracy: 0.874264
+Best Instance Accuracy: 0.914352, Class Accuracy: 0.874264
+Epoch 52 (52/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.07it/s]
+Train Instance Accuracy: 0.934334
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.95it/s]
+Test Instance Accuracy: 0.907630, Class Accuracy: 0.871037
+Best Instance Accuracy: 0.914352, Class Accuracy: 0.874264
+Epoch 53 (53/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.06it/s]
+Train Instance Accuracy: 0.938317
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.97it/s]
+Test Instance Accuracy: 0.901220, Class Accuracy: 0.866960
+Best Instance Accuracy: 0.914352, Class Accuracy: 0.874264
+Epoch 54 (54/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.06it/s]
+Train Instance Accuracy: 0.933926
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.95it/s]
+Test Instance Accuracy: 0.905226, Class Accuracy: 0.857985
+Best Instance Accuracy: 0.914352, Class Accuracy: 0.874264
+Epoch 55 (55/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.06it/s]
+Train Instance Accuracy: 0.936070
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.98it/s]
+Test Instance Accuracy: 0.903713, Class Accuracy: 0.862603
+Best Instance Accuracy: 0.914352, Class Accuracy: 0.874264
+Epoch 56 (56/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.06it/s]
+Train Instance Accuracy: 0.934334
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.97it/s]
+Test Instance Accuracy: 0.897703, Class Accuracy: 0.856516
+Best Instance Accuracy: 0.914352, Class Accuracy: 0.874264
+Epoch 57 (57/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.06it/s]
+Train Instance Accuracy: 0.937296
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.99it/s]
+Test Instance Accuracy: 0.899528, Class Accuracy: 0.860527
+Best Instance Accuracy: 0.914352, Class Accuracy: 0.874264
+Epoch 58 (58/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.06it/s]
+Train Instance Accuracy: 0.938930
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.94it/s]
+Test Instance Accuracy: 0.907630, Class Accuracy: 0.863420
+Best Instance Accuracy: 0.914352, Class Accuracy: 0.874264
+Epoch 59 (59/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.06it/s]
+Train Instance Accuracy: 0.938215
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.93it/s]
+Test Instance Accuracy: 0.897792, Class Accuracy: 0.871896
+Best Instance Accuracy: 0.914352, Class Accuracy: 0.874264
+Epoch 60 (60/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.07it/s]
+Train Instance Accuracy: 0.944240
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.99it/s]
+Test Instance Accuracy: 0.914441, Class Accuracy: 0.874283
+Best Instance Accuracy: 0.914441, Class Accuracy: 0.874283
+Saving at log/classification/2024-03-31_15-29/checkpoints/best_model.pth
+Epoch 61 (61/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.08it/s]
+Train Instance Accuracy: 0.946589
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.96it/s]
+Test Instance Accuracy: 0.912037, Class Accuracy: 0.869608
+Best Instance Accuracy: 0.914441, Class Accuracy: 0.874283
+Epoch 62 (62/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.07it/s]
+Train Instance Accuracy: 0.945057
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.96it/s]
+Test Instance Accuracy: 0.903624, Class Accuracy: 0.863000
+Best Instance Accuracy: 0.914441, Class Accuracy: 0.874283
+Epoch 63 (63/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.06it/s]
+Train Instance Accuracy: 0.948325
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.94it/s]
+Test Instance Accuracy: 0.914352, Class Accuracy: 0.869655
+Best Instance Accuracy: 0.914441, Class Accuracy: 0.874283
+Epoch 64 (64/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.06it/s]
+Train Instance Accuracy: 0.948427
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.92it/s]
+Test Instance Accuracy: 0.910034, Class Accuracy: 0.871934
+Best Instance Accuracy: 0.914441, Class Accuracy: 0.874283
+Epoch 65 (65/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.04it/s]
+Train Instance Accuracy: 0.952921
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.96it/s]
+Test Instance Accuracy: 0.912838, Class Accuracy: 0.873420
+Best Instance Accuracy: 0.914441, Class Accuracy: 0.874283
+Epoch 66 (66/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.04it/s]
+Train Instance Accuracy: 0.950980
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.96it/s]
+Test Instance Accuracy: 0.910835, Class Accuracy: 0.872139
+Best Instance Accuracy: 0.914441, Class Accuracy: 0.874283
+Epoch 67 (67/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.950776
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.98it/s]
+Test Instance Accuracy: 0.908609, Class Accuracy: 0.875633
+Best Instance Accuracy: 0.914441, Class Accuracy: 0.875633
+Epoch 68 (68/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.949755
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.96it/s]
+Test Instance Accuracy: 0.909544, Class Accuracy: 0.870397
+Best Instance Accuracy: 0.914441, Class Accuracy: 0.875633
+Epoch 69 (69/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.07it/s]
+Train Instance Accuracy: 0.953125
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  4.00it/s]
+Test Instance Accuracy: 0.910034, Class Accuracy: 0.869978
+Best Instance Accuracy: 0.914441, Class Accuracy: 0.875633
+Epoch 70 (70/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.953329
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.98it/s]
+Test Instance Accuracy: 0.907719, Class Accuracy: 0.872561
+Best Instance Accuracy: 0.914441, Class Accuracy: 0.875633
+Epoch 71 (71/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.951185
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.99it/s]
+Test Instance Accuracy: 0.911547, Class Accuracy: 0.882044
+Best Instance Accuracy: 0.914441, Class Accuracy: 0.882044
+Epoch 72 (72/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.07it/s]
+Train Instance Accuracy: 0.954146
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.93it/s]
+Test Instance Accuracy: 0.904825, Class Accuracy: 0.871199
+Best Instance Accuracy: 0.914441, Class Accuracy: 0.882044
+Epoch 73 (73/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.06it/s]
+Train Instance Accuracy: 0.949040
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.95it/s]
+Test Instance Accuracy: 0.903624, Class Accuracy: 0.871486
+Best Instance Accuracy: 0.914441, Class Accuracy: 0.882044
+Epoch 74 (74/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.06it/s]
+Train Instance Accuracy: 0.953738
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.99it/s]
+Test Instance Accuracy: 0.911325, Class Accuracy: 0.870018
+Best Instance Accuracy: 0.914441, Class Accuracy: 0.882044
+Epoch 75 (75/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.06it/s]
+Train Instance Accuracy: 0.952308
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  4.00it/s]
+Test Instance Accuracy: 0.909233, Class Accuracy: 0.865745
+Best Instance Accuracy: 0.914441, Class Accuracy: 0.882044
+Epoch 76 (76/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.953329
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.94it/s]
+Test Instance Accuracy: 0.910924, Class Accuracy: 0.873836
+Best Instance Accuracy: 0.914441, Class Accuracy: 0.882044
+Epoch 77 (77/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.948632
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.98it/s]
+Test Instance Accuracy: 0.915954, Class Accuracy: 0.885167
+Best Instance Accuracy: 0.915954, Class Accuracy: 0.885167
+Saving at log/classification/2024-03-31_15-29/checkpoints/best_model.pth
+Epoch 78 (78/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.949551
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.99it/s]
+Test Instance Accuracy: 0.910123, Class Accuracy: 0.873935
+Best Instance Accuracy: 0.915954, Class Accuracy: 0.885167
+Epoch 79 (79/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.04it/s]
+Train Instance Accuracy: 0.953942
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.98it/s]
+Test Instance Accuracy: 0.911948, Class Accuracy: 0.870686
+Best Instance Accuracy: 0.915954, Class Accuracy: 0.885167
+Epoch 80 (80/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.06it/s]
+Train Instance Accuracy: 0.956801
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.96it/s]
+Test Instance Accuracy: 0.917646, Class Accuracy: 0.892758
+Best Instance Accuracy: 0.917646, Class Accuracy: 0.892758
+Saving at log/classification/2024-03-31_15-29/checkpoints/best_model.pth
+Epoch 81 (81/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.04it/s]
+Train Instance Accuracy: 0.957108
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.91it/s]
+Test Instance Accuracy: 0.909945, Class Accuracy: 0.882548
+Best Instance Accuracy: 0.917646, Class Accuracy: 0.892758
+Epoch 82 (82/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.06it/s]
+Train Instance Accuracy: 0.957108
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.96it/s]
+Test Instance Accuracy: 0.910835, Class Accuracy: 0.879873
+Best Instance Accuracy: 0.917646, Class Accuracy: 0.892758
+Epoch 83 (83/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.06it/s]
+Train Instance Accuracy: 0.961295
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.95it/s]
+Test Instance Accuracy: 0.913150, Class Accuracy: 0.875122
+Best Instance Accuracy: 0.917646, Class Accuracy: 0.892758
+Epoch 84 (84/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.960682
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.97it/s]
+Test Instance Accuracy: 0.905938, Class Accuracy: 0.880659
+Best Instance Accuracy: 0.917646, Class Accuracy: 0.892758
+Epoch 85 (85/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.06it/s]
+Train Instance Accuracy: 0.960886
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.94it/s]
+Test Instance Accuracy: 0.913150, Class Accuracy: 0.882812
+Best Instance Accuracy: 0.917646, Class Accuracy: 0.892758
+Epoch 86 (86/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.963337
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.97it/s]
+Test Instance Accuracy: 0.912349, Class Accuracy: 0.887232
+Best Instance Accuracy: 0.917646, Class Accuracy: 0.892758
+Epoch 87 (87/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.04it/s]
+Train Instance Accuracy: 0.960682
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.98it/s]
+Test Instance Accuracy: 0.911547, Class Accuracy: 0.878122
+Best Instance Accuracy: 0.917646, Class Accuracy: 0.892758
+Epoch 88 (88/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.06it/s]
+Train Instance Accuracy: 0.963746
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.94it/s]
+Test Instance Accuracy: 0.910345, Class Accuracy: 0.882996
+Best Instance Accuracy: 0.917646, Class Accuracy: 0.892758
+Epoch 89 (89/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.964971
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.98it/s]
+Test Instance Accuracy: 0.918358, Class Accuracy: 0.881108
+Best Instance Accuracy: 0.918358, Class Accuracy: 0.892758
+Saving at log/classification/2024-03-31_15-29/checkpoints/best_model.pth
+Epoch 90 (90/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.06it/s]
+Train Instance Accuracy: 0.965380
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.99it/s]
+Test Instance Accuracy: 0.912215, Class Accuracy: 0.870997
+Best Instance Accuracy: 0.918358, Class Accuracy: 0.892758
+Epoch 91 (91/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.07it/s]
+Train Instance Accuracy: 0.959661
+100%|███████████████████████████████████████████| 39/39 [00:10<00:00,  3.87it/s]
+Test Instance Accuracy: 0.910524, Class Accuracy: 0.879752
+Best Instance Accuracy: 0.918358, Class Accuracy: 0.892758
+Epoch 92 (92/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.06it/s]
+Train Instance Accuracy: 0.964563
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  4.00it/s]
+Test Instance Accuracy: 0.910034, Class Accuracy: 0.878076
+Best Instance Accuracy: 0.918358, Class Accuracy: 0.892758
+Epoch 93 (93/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.06it/s]
+Train Instance Accuracy: 0.959763
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.97it/s]
+Test Instance Accuracy: 0.913551, Class Accuracy: 0.888784
+Best Instance Accuracy: 0.918358, Class Accuracy: 0.892758
+Epoch 94 (94/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.07it/s]
+Train Instance Accuracy: 0.964665
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.98it/s]
+Test Instance Accuracy: 0.911147, Class Accuracy: 0.880348
+Best Instance Accuracy: 0.918358, Class Accuracy: 0.892758
+Epoch 95 (95/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.06it/s]
+Train Instance Accuracy: 0.964563
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.96it/s]
+Test Instance Accuracy: 0.916845, Class Accuracy: 0.875449
+Best Instance Accuracy: 0.918358, Class Accuracy: 0.892758
+Epoch 96 (96/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.03it/s]
+Train Instance Accuracy: 0.963440
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  4.00it/s]
+Test Instance Accuracy: 0.912037, Class Accuracy: 0.884489
+Best Instance Accuracy: 0.918358, Class Accuracy: 0.892758
+Epoch 97 (97/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.07it/s]
+Train Instance Accuracy: 0.965482
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  4.00it/s]
+Test Instance Accuracy: 0.904736, Class Accuracy: 0.881462
+Best Instance Accuracy: 0.918358, Class Accuracy: 0.892758
+Epoch 98 (98/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.07it/s]
+Train Instance Accuracy: 0.963644
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.99it/s]
+Test Instance Accuracy: 0.910524, Class Accuracy: 0.869725
+Best Instance Accuracy: 0.918358, Class Accuracy: 0.892758
+Epoch 99 (99/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.06it/s]
+Train Instance Accuracy: 0.965584
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.98it/s]
+Test Instance Accuracy: 0.911636, Class Accuracy: 0.875544
+Best Instance Accuracy: 0.918358, Class Accuracy: 0.892758
+Epoch 100 (100/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.967831
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  4.00it/s]
+Test Instance Accuracy: 0.921563, Class Accuracy: 0.889880
+Best Instance Accuracy: 0.921563, Class Accuracy: 0.892758
+Saving at log/classification/2024-03-31_15-29/checkpoints/best_model.pth
+Epoch 101 (101/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.07it/s]
+Train Instance Accuracy: 0.966912
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.98it/s]
+Test Instance Accuracy: 0.914352, Class Accuracy: 0.882528
+Best Instance Accuracy: 0.921563, Class Accuracy: 0.892758
+Epoch 102 (102/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.07it/s]
+Train Instance Accuracy: 0.970792
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.98it/s]
+Test Instance Accuracy: 0.916355, Class Accuracy: 0.887397
+Best Instance Accuracy: 0.921563, Class Accuracy: 0.892758
+Epoch 103 (103/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.970690
+100%|███████████████████████████████████████████| 39/39 [00:10<00:00,  3.89it/s]
+Test Instance Accuracy: 0.916444, Class Accuracy: 0.878675
+Best Instance Accuracy: 0.921563, Class Accuracy: 0.892758
+Epoch 104 (104/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.03it/s]
+Train Instance Accuracy: 0.968342
+100%|███████████████████████████████████████████| 39/39 [00:10<00:00,  3.87it/s]
+Test Instance Accuracy: 0.908120, Class Accuracy: 0.877824
+Best Instance Accuracy: 0.921563, Class Accuracy: 0.892758
+Epoch 105 (105/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.07it/s]
+Train Instance Accuracy: 0.967729
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.95it/s]
+Test Instance Accuracy: 0.911547, Class Accuracy: 0.875570
+Best Instance Accuracy: 0.921563, Class Accuracy: 0.892758
+Epoch 106 (106/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.968035
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.93it/s]
+Test Instance Accuracy: 0.918759, Class Accuracy: 0.891610
+Best Instance Accuracy: 0.921563, Class Accuracy: 0.892758
+Epoch 107 (107/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.06it/s]
+Train Instance Accuracy: 0.971303
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.98it/s]
+Test Instance Accuracy: 0.909322, Class Accuracy: 0.879067
+Best Instance Accuracy: 0.921563, Class Accuracy: 0.892758
+Epoch 108 (108/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.971609
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.95it/s]
+Test Instance Accuracy: 0.909144, Class Accuracy: 0.871166
+Best Instance Accuracy: 0.921563, Class Accuracy: 0.892758
+Epoch 109 (109/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.06it/s]
+Train Instance Accuracy: 0.970792
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.91it/s]
+Test Instance Accuracy: 0.913640, Class Accuracy: 0.882380
+Best Instance Accuracy: 0.921563, Class Accuracy: 0.892758
+Epoch 110 (110/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.969669
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.99it/s]
+Test Instance Accuracy: 0.918447, Class Accuracy: 0.877931
+Best Instance Accuracy: 0.921563, Class Accuracy: 0.892758
+Epoch 111 (111/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.06it/s]
+Train Instance Accuracy: 0.969567
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.94it/s]
+Test Instance Accuracy: 0.915643, Class Accuracy: 0.892508
+Best Instance Accuracy: 0.921563, Class Accuracy: 0.892758
+Epoch 112 (112/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.06it/s]
+Train Instance Accuracy: 0.970588
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.98it/s]
+Test Instance Accuracy: 0.910835, Class Accuracy: 0.880073
+Best Instance Accuracy: 0.921563, Class Accuracy: 0.892758
+Epoch 113 (113/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.971609
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.96it/s]
+Test Instance Accuracy: 0.909322, Class Accuracy: 0.875354
+Best Instance Accuracy: 0.921563, Class Accuracy: 0.892758
+Epoch 114 (114/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.06it/s]
+Train Instance Accuracy: 0.971609
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.97it/s]
+Test Instance Accuracy: 0.911636, Class Accuracy: 0.877982
+Best Instance Accuracy: 0.921563, Class Accuracy: 0.892758
+Epoch 115 (115/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.969975
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.99it/s]
+Test Instance Accuracy: 0.914441, Class Accuracy: 0.884890
+Best Instance Accuracy: 0.921563, Class Accuracy: 0.892758
+Epoch 116 (116/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.06it/s]
+Train Instance Accuracy: 0.971303
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.97it/s]
+Test Instance Accuracy: 0.920762, Class Accuracy: 0.889670
+Best Instance Accuracy: 0.921563, Class Accuracy: 0.892758
+Epoch 117 (117/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.970792
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.95it/s]
+Test Instance Accuracy: 0.918848, Class Accuracy: 0.887841
+Best Instance Accuracy: 0.921563, Class Accuracy: 0.892758
+Epoch 118 (118/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.970997
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.98it/s]
+Test Instance Accuracy: 0.920940, Class Accuracy: 0.894065
+Best Instance Accuracy: 0.921563, Class Accuracy: 0.894065
+Epoch 119 (119/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.968954
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.93it/s]
+Test Instance Accuracy: 0.915331, Class Accuracy: 0.884135
+Best Instance Accuracy: 0.921563, Class Accuracy: 0.894065
+Epoch 120 (120/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.974367
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.98it/s]
+Test Instance Accuracy: 0.918937, Class Accuracy: 0.885112
+Best Instance Accuracy: 0.921563, Class Accuracy: 0.894065
+Epoch 121 (121/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.975490
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.96it/s]
+Test Instance Accuracy: 0.918047, Class Accuracy: 0.890646
+Best Instance Accuracy: 0.921563, Class Accuracy: 0.894065
+Epoch 122 (122/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.04it/s]
+Train Instance Accuracy: 0.975082
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.94it/s]
+Test Instance Accuracy: 0.919961, Class Accuracy: 0.891413
+Best Instance Accuracy: 0.921563, Class Accuracy: 0.894065
+Epoch 123 (123/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.973754
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.93it/s]
+Test Instance Accuracy: 0.913729, Class Accuracy: 0.884118
+Best Instance Accuracy: 0.921563, Class Accuracy: 0.894065
+Epoch 124 (124/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.04it/s]
+Train Instance Accuracy: 0.974265
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.98it/s]
+Test Instance Accuracy: 0.914842, Class Accuracy: 0.881361
+Best Instance Accuracy: 0.921563, Class Accuracy: 0.894065
+Epoch 125 (125/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.06it/s]
+Train Instance Accuracy: 0.976205
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.97it/s]
+Test Instance Accuracy: 0.909010, Class Accuracy: 0.880677
+Best Instance Accuracy: 0.921563, Class Accuracy: 0.894065
+Epoch 126 (126/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.974673
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.93it/s]
+Test Instance Accuracy: 0.909233, Class Accuracy: 0.877904
+Best Instance Accuracy: 0.921563, Class Accuracy: 0.894065
+Epoch 127 (127/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.974980
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.95it/s]
+Test Instance Accuracy: 0.914931, Class Accuracy: 0.888019
+Best Instance Accuracy: 0.921563, Class Accuracy: 0.894065
+Epoch 128 (128/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.07it/s]
+Train Instance Accuracy: 0.973754
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.98it/s]
+Test Instance Accuracy: 0.922854, Class Accuracy: 0.892823
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.894065
+Saving at log/classification/2024-03-31_15-29/checkpoints/best_model.pth
+Epoch 129 (129/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.974367
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.94it/s]
+Test Instance Accuracy: 0.914441, Class Accuracy: 0.890677
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.894065
+Epoch 130 (130/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.976307
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.97it/s]
+Test Instance Accuracy: 0.909633, Class Accuracy: 0.874331
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.894065
+Epoch 131 (131/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.973958
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.96it/s]
+Test Instance Accuracy: 0.918447, Class Accuracy: 0.886717
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.894065
+Epoch 132 (132/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.06it/s]
+Train Instance Accuracy: 0.977022
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.95it/s]
+Test Instance Accuracy: 0.920361, Class Accuracy: 0.887684
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.894065
+Epoch 133 (133/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.07it/s]
+Train Instance Accuracy: 0.976001
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.96it/s]
+Test Instance Accuracy: 0.914842, Class Accuracy: 0.877607
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.894065
+Epoch 134 (134/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.06it/s]
+Train Instance Accuracy: 0.978350
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.97it/s]
+Test Instance Accuracy: 0.917156, Class Accuracy: 0.887005
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.894065
+Epoch 135 (135/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.06it/s]
+Train Instance Accuracy: 0.977226
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.97it/s]
+Test Instance Accuracy: 0.916845, Class Accuracy: 0.879261
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.894065
+Epoch 136 (136/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.06it/s]
+Train Instance Accuracy: 0.976103
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.97it/s]
+Test Instance Accuracy: 0.912749, Class Accuracy: 0.883765
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.894065
+Epoch 137 (137/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.976307
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.99it/s]
+Test Instance Accuracy: 0.912838, Class Accuracy: 0.880907
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.894065
+Epoch 138 (138/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.06it/s]
+Train Instance Accuracy: 0.973652
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.95it/s]
+Test Instance Accuracy: 0.907229, Class Accuracy: 0.880222
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.894065
+Epoch 139 (139/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.06it/s]
+Train Instance Accuracy: 0.975490
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.94it/s]
+Test Instance Accuracy: 0.911147, Class Accuracy: 0.877012
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.894065
+Epoch 140 (140/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.06it/s]
+Train Instance Accuracy: 0.975184
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.96it/s]
+Test Instance Accuracy: 0.914752, Class Accuracy: 0.878556
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.894065
+Epoch 141 (141/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.07it/s]
+Train Instance Accuracy: 0.979575
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.93it/s]
+Test Instance Accuracy: 0.913239, Class Accuracy: 0.880212
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.894065
+Epoch 142 (142/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.977941
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.92it/s]
+Test Instance Accuracy: 0.916355, Class Accuracy: 0.880609
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.894065
+Epoch 143 (143/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.06it/s]
+Train Instance Accuracy: 0.982026
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.92it/s]
+Test Instance Accuracy: 0.912527, Class Accuracy: 0.885343
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.894065
+Epoch 144 (144/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.03it/s]
+Train Instance Accuracy: 0.979167
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.95it/s]
+Test Instance Accuracy: 0.916845, Class Accuracy: 0.883555
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.894065
+Epoch 145 (145/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.980801
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.97it/s]
+Test Instance Accuracy: 0.911236, Class Accuracy: 0.876348
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.894065
+Epoch 146 (146/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.978350
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.97it/s]
+Test Instance Accuracy: 0.908431, Class Accuracy: 0.877595
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.894065
+Epoch 147 (147/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.06it/s]
+Train Instance Accuracy: 0.977022
+100%|███████████████████████████████████████████| 39/39 [00:10<00:00,  3.89it/s]
+Test Instance Accuracy: 0.915954, Class Accuracy: 0.891261
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.894065
+Epoch 148 (148/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.06it/s]
+Train Instance Accuracy: 0.981413
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.95it/s]
+Test Instance Accuracy: 0.915242, Class Accuracy: 0.883079
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.894065
+Epoch 149 (149/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.06it/s]
+Train Instance Accuracy: 0.980188
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.99it/s]
+Test Instance Accuracy: 0.913951, Class Accuracy: 0.888158
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.894065
+Epoch 150 (150/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.03it/s]
+Train Instance Accuracy: 0.977533
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.95it/s]
+Test Instance Accuracy: 0.915020, Class Accuracy: 0.891808
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.894065
+Epoch 151 (151/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.06it/s]
+Train Instance Accuracy: 0.976920
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.97it/s]
+Test Instance Accuracy: 0.916355, Class Accuracy: 0.891751
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.894065
+Epoch 152 (152/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.06it/s]
+Train Instance Accuracy: 0.982128
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.97it/s]
+Test Instance Accuracy: 0.917958, Class Accuracy: 0.894609
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.894609
+Epoch 153 (153/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.06it/s]
+Train Instance Accuracy: 0.978350
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.96it/s]
+Test Instance Accuracy: 0.911147, Class Accuracy: 0.879893
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.894609
+Epoch 154 (154/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.06it/s]
+Train Instance Accuracy: 0.980801
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.97it/s]
+Test Instance Accuracy: 0.918047, Class Accuracy: 0.893254
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.894609
+Epoch 155 (155/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.06it/s]
+Train Instance Accuracy: 0.981005
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.93it/s]
+Test Instance Accuracy: 0.913150, Class Accuracy: 0.880579
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.894609
+Epoch 156 (156/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.979167
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.96it/s]
+Test Instance Accuracy: 0.920050, Class Accuracy: 0.891634
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.894609
+Epoch 157 (157/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.981005
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.98it/s]
+Test Instance Accuracy: 0.916355, Class Accuracy: 0.886316
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.894609
+Epoch 158 (158/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.06it/s]
+Train Instance Accuracy: 0.977226
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.95it/s]
+Test Instance Accuracy: 0.915732, Class Accuracy: 0.891173
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.894609
+Epoch 159 (159/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.06it/s]
+Train Instance Accuracy: 0.979779
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.95it/s]
+Test Instance Accuracy: 0.916533, Class Accuracy: 0.889067
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.894609
+Epoch 160 (160/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.06it/s]
+Train Instance Accuracy: 0.979065
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.97it/s]
+Test Instance Accuracy: 0.916845, Class Accuracy: 0.884104
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.894609
+Epoch 161 (161/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.06it/s]
+Train Instance Accuracy: 0.984886
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.95it/s]
+Test Instance Accuracy: 0.914040, Class Accuracy: 0.879030
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.894609
+Epoch 162 (162/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.06it/s]
+Train Instance Accuracy: 0.984579
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.93it/s]
+Test Instance Accuracy: 0.911547, Class Accuracy: 0.877879
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.894609
+Epoch 163 (163/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.06it/s]
+Train Instance Accuracy: 0.982945
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.91it/s]
+Test Instance Accuracy: 0.913150, Class Accuracy: 0.881795
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.894609
+Epoch 164 (164/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.06it/s]
+Train Instance Accuracy: 0.984783
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.93it/s]
+Test Instance Accuracy: 0.916845, Class Accuracy: 0.880292
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.894609
+Epoch 165 (165/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.07it/s]
+Train Instance Accuracy: 0.982945
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.98it/s]
+Test Instance Accuracy: 0.912838, Class Accuracy: 0.884466
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.894609
+Epoch 166 (166/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.981822
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.97it/s]
+Test Instance Accuracy: 0.916043, Class Accuracy: 0.893568
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.894609
+Epoch 167 (167/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.07it/s]
+Train Instance Accuracy: 0.981822
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.97it/s]
+Test Instance Accuracy: 0.912527, Class Accuracy: 0.887068
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.894609
+Epoch 168 (168/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.06it/s]
+Train Instance Accuracy: 0.981516
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.97it/s]
+Test Instance Accuracy: 0.913328, Class Accuracy: 0.884807
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.894609
+Epoch 169 (169/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.983150
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.99it/s]
+Test Instance Accuracy: 0.915954, Class Accuracy: 0.887192
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.894609
+Epoch 170 (170/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.06it/s]
+Train Instance Accuracy: 0.982741
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.98it/s]
+Test Instance Accuracy: 0.921964, Class Accuracy: 0.898759
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.898759
+Epoch 171 (171/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.983150
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  4.01it/s]
+Test Instance Accuracy: 0.913640, Class Accuracy: 0.889028
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.898759
+Epoch 172 (172/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.982128
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.98it/s]
+Test Instance Accuracy: 0.916756, Class Accuracy: 0.884783
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.898759
+Epoch 173 (173/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.06it/s]
+Train Instance Accuracy: 0.982741
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.96it/s]
+Test Instance Accuracy: 0.917958, Class Accuracy: 0.892102
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.898759
+Epoch 174 (174/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.04it/s]
+Train Instance Accuracy: 0.984886
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.95it/s]
+Test Instance Accuracy: 0.912838, Class Accuracy: 0.882010
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.898759
+Epoch 175 (175/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.982843
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.96it/s]
+Test Instance Accuracy: 0.917646, Class Accuracy: 0.889163
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.898759
+Epoch 176 (176/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.983047
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.97it/s]
+Test Instance Accuracy: 0.913640, Class Accuracy: 0.883315
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.898759
+Epoch 177 (177/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.984886
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.99it/s]
+Test Instance Accuracy: 0.916043, Class Accuracy: 0.884267
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.898759
+Epoch 178 (178/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.981720
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.92it/s]
+Test Instance Accuracy: 0.915554, Class Accuracy: 0.887458
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.898759
+Epoch 179 (179/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.06it/s]
+Train Instance Accuracy: 0.982639
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.97it/s]
+Test Instance Accuracy: 0.914842, Class Accuracy: 0.888860
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.898759
+Epoch 180 (180/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.06it/s]
+Train Instance Accuracy: 0.982741
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.97it/s]
+Test Instance Accuracy: 0.912838, Class Accuracy: 0.885053
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.898759
+Epoch 181 (181/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.07it/s]
+Train Instance Accuracy: 0.980699
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.96it/s]
+Test Instance Accuracy: 0.915153, Class Accuracy: 0.879613
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.898759
+Epoch 182 (182/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.06it/s]
+Train Instance Accuracy: 0.984273
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.96it/s]
+Test Instance Accuracy: 0.917958, Class Accuracy: 0.887256
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.898759
+Epoch 183 (183/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.983762
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.94it/s]
+Test Instance Accuracy: 0.914441, Class Accuracy: 0.886830
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.898759
+Epoch 184 (184/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.06it/s]
+Train Instance Accuracy: 0.984477
+100%|███████████████████████████████████████████| 39/39 [00:10<00:00,  3.88it/s]
+Test Instance Accuracy: 0.915153, Class Accuracy: 0.884098
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.898759
+Epoch 185 (185/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.06it/s]
+Train Instance Accuracy: 0.984069
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.99it/s]
+Test Instance Accuracy: 0.912037, Class Accuracy: 0.886772
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.898759
+Epoch 186 (186/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.985294
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.99it/s]
+Test Instance Accuracy: 0.913640, Class Accuracy: 0.879848
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.898759
+Epoch 187 (187/200):
+100%|█████████████████████████████████████████| 153/153 [00:51<00:00,  2.96it/s]
+Train Instance Accuracy: 0.982333
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.98it/s]
+Test Instance Accuracy: 0.917245, Class Accuracy: 0.894495
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.898759
+Epoch 188 (188/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.06it/s]
+Train Instance Accuracy: 0.985192
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.99it/s]
+Test Instance Accuracy: 0.914842, Class Accuracy: 0.890164
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.898759
+Epoch 189 (189/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.07it/s]
+Train Instance Accuracy: 0.982639
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.97it/s]
+Test Instance Accuracy: 0.913640, Class Accuracy: 0.883296
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.898759
+Epoch 190 (190/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.06it/s]
+Train Instance Accuracy: 0.982230
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  4.00it/s]
+Test Instance Accuracy: 0.914352, Class Accuracy: 0.889902
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.898759
+Epoch 191 (191/200):
+100%|█████████████████████████████████████████| 153/153 [00:49<00:00,  3.07it/s]
+Train Instance Accuracy: 0.983762
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.97it/s]
+Test Instance Accuracy: 0.915153, Class Accuracy: 0.887464
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.898759
+Epoch 192 (192/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.982945
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  4.00it/s]
+Test Instance Accuracy: 0.915554, Class Accuracy: 0.888769
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.898759
+Epoch 193 (193/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.06it/s]
+Train Instance Accuracy: 0.984886
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.97it/s]
+Test Instance Accuracy: 0.915954, Class Accuracy: 0.888312
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.898759
+Epoch 194 (194/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.06it/s]
+Train Instance Accuracy: 0.984069
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  4.01it/s]
+Test Instance Accuracy: 0.915242, Class Accuracy: 0.888823
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.898759
+Epoch 195 (195/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.984069
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  4.00it/s]
+Test Instance Accuracy: 0.916444, Class Accuracy: 0.888019
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.898759
+Epoch 196 (196/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.983456
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.96it/s]
+Test Instance Accuracy: 0.921964, Class Accuracy: 0.891260
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.898759
+Epoch 197 (197/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.06it/s]
+Train Instance Accuracy: 0.986009
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.97it/s]
+Test Instance Accuracy: 0.918047, Class Accuracy: 0.891428
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.898759
+Epoch 198 (198/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.05it/s]
+Train Instance Accuracy: 0.984579
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.94it/s]
+Test Instance Accuracy: 0.914752, Class Accuracy: 0.888107
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.898759
+Epoch 199 (199/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.04it/s]
+Train Instance Accuracy: 0.983660
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.96it/s]
+Test Instance Accuracy: 0.917646, Class Accuracy: 0.891183
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.898759
+Epoch 200 (200/200):
+100%|█████████████████████████████████████████| 153/153 [00:50<00:00,  3.06it/s]
+Train Instance Accuracy: 0.984069
+100%|███████████████████████████████████████████| 39/39 [00:09<00:00,  3.95it/s]
+Test Instance Accuracy: 0.917156, Class Accuracy: 0.885572
+Best Instance Accuracy: 0.922854, Class Accuracy: 0.898759
+
+进程已结束，退出代码为 0

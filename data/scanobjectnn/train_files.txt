@@ -1,0 +1,4 @@
+training_objectdataset.h5
+training_objectdataset_augmented25_norot.h5
+training_objectdataset_augmented25rot.h5
+training_objectdataset_augmentedrot.h5

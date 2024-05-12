@@ -1,0 +1,43 @@
+/root/miniconda3/bin/python /root/autodl-tmp/combined/pointnet.pytorch-master-3.16/utils/train_classification.py
+bash: line 0: cd: /root/autodl-tmp/combined/pointnet-master/utils: No such file or directory
+/root/autodl-tmp/combined/pointclip_sch/clip/clip.py:23: UserWarning: PyTorch version 1.7.1 or higher is recommended
+  warnings.warn("PyTorch version 1.7.1 or higher is recommended")
+Namespace(backbone='', batchSize=100, config_file='/root/autodl-tmp/combined/pointclip_sch/configs/trainers/PointCLIP_ZS/rn50.yaml', dataset='/root/autodl-tmp/combined/data/scanobjectnn', dataset_config_file='/root/autodl-tmp/combined/pointclip_sch/configs/datasets/scanobjectnn.yaml', dataset_type='scanobjectnn', feature_transform=False, model='/root/autodl-tmp/combined/pointnet.pytorch-master-3.16/utils/cls_model_199_scanobjectnn.pth', nepoch=200, num_points=2500, opts=[], outf='cls', output_dir='output/PointCLIP_ZS/rn50/scanobjectnn', resume='', seed=2, trainer='PointCLIP_ZS', workers=4, zero_shot=True)
+Random Seed:  4832
+{'bag': 0, 'bin': 1, 'box': 2, 'cabinet': 3, 'chair': 4, 'desk': 5, 'display': 6, 'door': 7, 'shelf': 8, 'table': 9, 'bed': 10, 'pillow': 11, 'sink': 12, 'sofa': 13, 'toilet': 14}
+{'bag': 0, 'bin': 1, 'box': 2, 'cabinet': 3, 'chair': 4, 'desk': 5, 'display': 6, 'door': 7, 'shelf': 8, 'table': 9, 'bed': 10, 'pillow': 11, 'sink': 12, 'sofa': 13, 'toilet': 14}
+25261 3475
+classes 15
+Loading evaluator: Classification
+/root/miniconda3/lib/python3.8/site-packages/torch/nn/functional.py:2952: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+35it [00:01, 32.08it/s]
+final accuracy 0.28719424460431653
+0.1
+35it [00:01, 32.01it/s]
+final accuracy 0.5070503597122302
+0.2
+35it [00:01, 32.22it/s]
+final accuracy 0.5936690647482015
+0.30000000000000004
+35it [00:01, 31.85it/s]
+final accuracy 0.6166906474820144
+0.4
+35it [00:01, 32.28it/s]
+final accuracy 0.6241726618705036
+0.5
+35it [00:01, 31.72it/s]
+final accuracy 0.6244604316546762
+0.6
+35it [00:01, 32.44it/s]
+final accuracy 0.6235971223021582
+0.7000000000000001
+35it [00:01, 32.47it/s]
+final accuracy 0.6241726618705036
+0.8
+35it [00:01, 31.90it/s]
+final accuracy 0.6221582733812949
+0.9
+35it [00:01, 32.22it/s]
+final accuracy 0.6189928057553957
+1.0

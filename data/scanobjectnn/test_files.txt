@@ -1,0 +1,2 @@
+test_objectdataset.h5
+test_objectdataset_augmented25_norot.h5
