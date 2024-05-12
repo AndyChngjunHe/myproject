@@ -32,9 +32,9 @@ python setup.py develop
 ```
 
 ### Dataset
-Download the official [ModelNet40](https://shapenet.cs.stanford.edu/media/modelnet40_ply_hdf5_2048.zip) dataset and put the unzip folder under `data/`.
-Download the official [ScanObjectNN](https://docs.google.com/forms/d/e/1FAIpQLSeHkKPspO4NyVozXkCMOv4UuvXpn2Qb3WG3_3AILFcRni9ArQ/viewform) dataset and put the unzip folder under `data/`.
-scanobjectnn数据集请使用项目代码中data/scanobjectnn/中的train_files.txt和test_files.txt文件
+#### Download the official [ModelNet40](https://shapenet.cs.stanford.edu/media/modelnet40_ply_hdf5_2048.zip) dataset and put the unzip folder under `data/`.
+#### Download the official [ScanObjectNN](https://docs.google.com/forms/d/e/1FAIpQLSeHkKPspO4NyVozXkCMOv4UuvXpn2Qb3WG3_3AILFcRni9ArQ/viewform) dataset and put the unzip folder under `data/`.
+##### scanobjectnn数据集请使用项目代码中data/scanobjectnn/中的train_files.txt和test_files.txt文件
 数据集在各模型中位置如下：
 ```bash
 │pointnet.pytorch-master-3.16/
