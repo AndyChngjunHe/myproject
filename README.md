@@ -36,28 +36,30 @@ Download the official [ModelNet40](https://shapenet.cs.stanford.edu/media/modeln
 Download the official [ScanObjectNN](https://docs.google.com/forms/d/e/1FAIpQLSeHkKPspO4NyVozXkCMOv4UuvXpn2Qb3WG3_3AILFcRni9ArQ/viewform) dataset and put the unzip folder under `data/`.
 scanobjectnn数据集请使用项目代码中data/scanobjectnn/中的train_files.txt和test_files.txt文件
 数据集在各模型中位置如下：
+```bash
 │pointnet.pytorch-master-3.16/
 ├──...
 ├──data/
 │   ├──modelnet40_ply_hdf5_2048/
 │   ├──scanobjectnn/
 ├──...
-
+```
+```bash
 │Pointnet_Pointnet2_pytorch-master/
 ├──...
 ├──data/
 │   ├──modelnet40_ply_hdf5_2048/
 │   ├──scanobjectnn/
 ├──...
-
-
+```
+```bash
 │PointCLIP/
 ├──...
 ├──data/
 │   ├──modelnet40_ply_hdf5_2048/
 │   ├──scanobjectnn/
 ├──...
-
+```
 
 ## Get Started
 ### PointNet Classification
@@ -71,7 +73,7 @@ Use --feature_transform to use feature transform.
 
 ### PointNet++ Classification
 If you want to train on ModelNet40, you can use --num_category 40.
-If you want to train on ScanObjectNN, you can use --num_category 15.
+
 ```bash
 # ModelNet40
 ## Select different models in ./models 
@@ -80,7 +82,7 @@ python train_classification.py --model pointnet2_cls_ssg --log_dir pointnet2_cls
 python test_classification.py --log_dir pointnet2_cls_ssg --num_category 40
 python train_classification.py --model pointnet2_cls_msg --log_dir pointnet2_cls_msg --num_category 40
 python test_classification.py --log_dir pointnet2_cls_msg --num_category 40
-
+If you want to train on ScanObjectNN, you can use --num_category 15.
 # ScanObjectNN
 ## Select different models in ./models 
 python train_classification.py --model pointnet2_cls_ssg --log_dir pointnet2_cls_ssg --num_category 15
