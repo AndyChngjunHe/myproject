@@ -11,23 +11,19 @@
 
 ### Installation
 PointNet和PointNet++所需环境安装：
-PyTorch 1.6.0、Python 3.8、CUDA 10.1  requirements去系统里看一下
 ```bash
 conda create -n pointnet python=3.8
 conda activate pointnet
-pip install -r requirements.txt
+conda install pytorch==1.6.0 cudatoolkit=10.1 -c pytorch
 ```
 
 
 PointCLIP所需环境安装:
 ```bash
-cd PointCLIP
 conda create -n pointclip python=3.8
 conda activate pointclip
+conda install pytorch==1.9.0 cudatoolkit=11.1 -c pytorch
 pip install -r requirements.txt
-
-conda install pytorch torchvision cudatoolkit
-PyTorch 1.9.0 和 CUDA 11.1
 
 # Install the modified dassl library (no need to re-build if the source code is changed)
 cd Dassl3D/
@@ -46,14 +42,14 @@ scanobjectnn数据集请使用项目代码中data/scanobjectnn/中的train_files
 │   ├──modelnet40_ply_hdf5_2048/
 │   ├──scanobjectnn/
 ├──...
-```
+
 │Pointnet_Pointnet2_pytorch-master/
 ├──...
 ├──data/
 │   ├──modelnet40_ply_hdf5_2048/
 │   ├──scanobjectnn/
 ├──...
-```
+
 
 │PointCLIP/
 ├──...
@@ -61,8 +57,7 @@ scanobjectnn数据集请使用项目代码中data/scanobjectnn/中的train_files
 │   ├──modelnet40_ply_hdf5_2048/
 │   ├──scanobjectnn/
 ├──...
-```
-### 
+
 
 ## Get Started
 ### PointNet Classification
@@ -75,30 +70,28 @@ python train_classification.py --dataset <dataset path> --nepoch=<number epochs>
 Use --feature_transform to use feature transform.
 
 ### PointNet++
-If you want to train on ModelNet10, you can use --num_category 10.
+If you want to train on ModelNet40, you can use --num_category 40.
+If you want to train on ScanObjectNN, you can use --num_category 15.
 ```bash
 # ModelNet40
 ## Select different models in ./models 
 
-## e.g., pointnet2_ssg without normal features
-python train_classification.py --model pointnet2_cls_ssg --log_dir pointnet2_cls_ssg
-python test_classification.py --log_dir pointnet2_cls_ssg
-
-## e.g., pointnet2_ssg with normal features
-python train_classification.py --model pointnet2_cls_ssg --use_normals --log_dir pointnet2_cls_ssg_normal
-python test_classification.py --use_normals --log_dir pointnet2_cls_ssg_normal
-
-## e.g., pointnet2_ssg with uniform sampling
-python train_classification.py --model pointnet2_cls_ssg --use_uniform_sample --log_dir pointnet2_cls_ssg_fps
-python test_classification.py --use_uniform_sample --log_dir pointnet2_cls_ssg_fps
+python train_classification.py --model pointnet2_cls_ssg --log_dir pointnet2_cls_ssg --num_category 40
+python test_classification.py --log_dir pointnet2_cls_ssg --num_category 40
+python train_classification.py --model pointnet2_cls_msg --log_dir pointnet2_cls_msg --num_category 40
+python test_classification.py --log_dir pointnet2_cls_msg --num_category 40
 
 # ScanObjectNN
+## Select different models in ./models 
+python train_classification.py --model pointnet2_cls_ssg --log_dir pointnet2_cls_ssg --num_category 15
+python test_classification.py --log_dir pointnet2_cls_ssg --num_category 15
+python train_classification.py --model pointnet2_cls_msg --log_dir pointnet2_cls_msg --num_category 15
+python test_classification.py --log_dir pointnet2_cls_msg --num_category 15
 
 ```
 
-
-
 ### Zero-shot PointCLIP
+#### 需要修改数据集或者使用的模型，可以在zeroshot.sh和fewshot.sh中修改参数
 Edit the running settings in `scripts/zeroshot.sh`, e.g. config file and output directory. Then run Zero-shot PointCLIP:
 ```bash
 cd scripts
