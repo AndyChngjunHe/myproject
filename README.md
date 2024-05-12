@@ -1,4 +1,4 @@
-# Hechengjun's graduation poject
+# Hechengjun's graduation project
 
 
 ## Introduction
