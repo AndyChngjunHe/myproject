@@ -38,12 +38,28 @@ python setup.py develop
 ### Dataset
 Download the official [ModelNet40](https://shapenet.cs.stanford.edu/media/modelnet40_ply_hdf5_2048.zip) dataset and put the unzip folder under `data/`.
 Download the official [ScanObjectNN](https://docs.google.com/forms/d/e/1FAIpQLSeHkKPspO4NyVozXkCMOv4UuvXpn2Qb3WG3_3AILFcRni9ArQ/viewform) dataset and put the unzip folder under `data/`.
-The directory structure should be:
-```bash
+scanobjectnn数据集请使用项目代码中data/scanobjectnn/中的train_files.txt和test_files.txt文件
+数据集在各模型中位置如下：
+│pointnet.pytorch-master-3.16/
+├──...
+├──data/
+│   ├──modelnet40_ply_hdf5_2048/
+│   ├──scanobjectnn/
+├──...
+```
+│Pointnet_Pointnet2_pytorch-master/
+├──...
+├──data/
+│   ├──modelnet40_ply_hdf5_2048/
+│   ├──scanobjectnn/
+├──...
+```
+
 │PointCLIP/
 ├──...
 ├──data/
 │   ├──modelnet40_ply_hdf5_2048/
+│   ├──scanobjectnn/
 ├──...
 ```
 ### 
@@ -57,6 +73,30 @@ python train_classification.py --dataset <dataset path> --nepoch=<number epochs>
 
 ```
 Use --feature_transform to use feature transform.
+
+### PointNet++
+If you want to train on ModelNet10, you can use --num_category 10.
+```bash
+# ModelNet40
+## Select different models in ./models 
+
+## e.g., pointnet2_ssg without normal features
+python train_classification.py --model pointnet2_cls_ssg --log_dir pointnet2_cls_ssg
+python test_classification.py --log_dir pointnet2_cls_ssg
+
+## e.g., pointnet2_ssg with normal features
+python train_classification.py --model pointnet2_cls_ssg --use_normals --log_dir pointnet2_cls_ssg_normal
+python test_classification.py --use_normals --log_dir pointnet2_cls_ssg_normal
+
+## e.g., pointnet2_ssg with uniform sampling
+python train_classification.py --model pointnet2_cls_ssg --use_uniform_sample --log_dir pointnet2_cls_ssg_fps
+python test_classification.py --use_uniform_sample --log_dir pointnet2_cls_ssg_fps
+
+# ScanObjectNN
+
+```
+
+
 
 ### Zero-shot PointCLIP
 Edit the running settings in `scripts/zeroshot.sh`, e.g. config file and output directory. Then run Zero-shot PointCLIP:
