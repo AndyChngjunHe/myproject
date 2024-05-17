@@ -414,6 +414,9 @@ Loading evaluator: Classification
 [Epoch 199] Train loss: 0.532, accuracy: 0.929
 [Epoch 199] Test loss: 2.421, accuracy: 0.622
 35it [00:01, 32.21it/s]
+
+根据之前只在测试集结合时获得最好分类准确率的系数为0.6
+在这次训练中训练集和测试集结合zeroshot系数都采用0.6
 final accuracy 0.6221582733812949 将zeroshot结合到训练和测试中
 35it [00:01, 32.60it/s]
 final accuracy 0.6198561151079137 只将zeroshot结合到训练中
