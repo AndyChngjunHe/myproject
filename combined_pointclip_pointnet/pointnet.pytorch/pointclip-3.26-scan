@@ -1,0 +1,11 @@
+/root/miniconda3/bin/python /root/autodl-tmp/pointnet/utils/train_classification.py
+Namespace(batchSize=100, dataset='../data/scanobjectnn', dataset_type='scanobjectnn', feature_transform=False, model='../utils/cls_model_199_scanobjectnn.pth', nepoch=200, num_points=2500, outf='cls', workers=4)
+Random Seed:  600
+{'bag': 0, 'bin': 1, 'box': 2, 'cabinet': 3, 'chair': 4, 'desk': 5, 'display': 6, 'door': 7, 'shelf': 8, 'table': 9, 'bed': 10, 'pillow': 11, 'sink': 12, 'sofa': 13, 'toilet': 14}
+{'bag': 0, 'bin': 1, 'box': 2, 'cabinet': 3, 'chair': 4, 'desk': 5, 'display': 6, 'door': 7, 'shelf': 8, 'table': 9, 'bed': 10, 'pillow': 11, 'sink': 12, 'sofa': 13, 'toilet': 14}
+36687 3475
+classes 15
+35it [00:01, 26.54it/s]
+final accuracy 0.6126618705035971
+
+进程已结束，退出代码为 0

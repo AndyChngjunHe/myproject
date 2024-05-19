@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="root@region-41.seetacloud.com:57452 password (2)" remoteFilesAllowedToDisappearOnAutoupload="false" confirmBeforeUploading="false">
+  <component name="PublishConfigData" autoUpload="Always" serverName="root@connect.westb.seetacloud.com:30436 password" remoteFilesAllowedToDisappearOnAutoupload="false" confirmBeforeUploading="false">
     <option name="confirmBeforeUploading" value="false" />
     <serverData>
       <paths name="CLIP">
@@ -35,6 +35,13 @@
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="root@connect.westb.seetacloud.com:30436 password">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/root/autodl-tmp/combined" local="$PROJECT_DIR$" />
           </mappings>
         </serverdata>
       </paths>
@@ -73,10 +80,31 @@
           </mappings>
         </serverdata>
       </paths>
+      <paths name="root@connect.westb.seetacloud.com:46161 password">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/root/autodl-tmp/combined" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="root@connect.westb.seetacloud.com:46161 password (2)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/root/autodl-tmp/combined" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="root@connect.westb.seetacloud.com:56098 password">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="root@connect.westb.seetacloud.com:57001 password">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/root/autodl-tmp/combined" local="$PROJECT_DIR$" />
           </mappings>
         </serverdata>
       </paths>
@@ -241,6 +269,13 @@
           </mappings>
         </serverdata>
       </paths>
+      <paths name="root@region-41.seetacloud.com:41882 password">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="root@region-41.seetacloud.com:57452 password">
         <serverdata>
           <mappings>
@@ -270,6 +305,13 @@
         </serverdata>
       </paths>
       <paths name="root@region-42.seetacloud.com:13125 password">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="root@region-42.seetacloud.com:16435 password">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
@@ -340,6 +382,27 @@
         </serverdata>
       </paths>
       <paths name="root@region-45.autodl.pro:24451 password (3)">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="root@region-45.autodl.pro:31262 password">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="root@region-46.seetacloud.com:23046 password">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="root@region-46.seetacloud.com:23046 password (2)">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />

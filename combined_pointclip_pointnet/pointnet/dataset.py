@@ -208,7 +208,7 @@ class ScanObjectNNDataset(Dataset):
         self.h5_files = self._get_h5_file_list(split)
         self.data, self.labels = self._load_h5_files(self.h5_files)
         self.cat = {}
-        with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), '/root/autodl-tmp/combined/pointnet.pytorch-master-3.16/misc/scanobjectnn_id.txt'), 'r') as f:
+        with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), '/root/autodl-tmp/combined/pointnet.pytorch/misc/scanobjectnn_id.txt'), 'r') as f:
             for line in f:
                 ls = line.strip().split()
                 self.cat[ls[0]] = int(ls[1])

@@ -1,0 +1,10 @@
+from dassl.utils import Registry, check_availability
+
+EVALUATOR_REGISTRY = Registry('EVALUATOR')
+
+
+def build_evaluator(cfg, **kwargs):
+    avai_evaluators = EVALUATOR_REGISTRY.registered_names()
+    check_availability(cfg.TEST.EVALUATOR, avai_evaluators)
+
+    return EVALUATOR_REGISTRY.get(cfg.TEST.EVALUATOR)(cfg, **kwargs)
